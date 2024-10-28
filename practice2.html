@@ -1,0 +1,36 @@
+
+<!-- saved from url=(0051)https://people.eecs.ku.edu/~l722k715/practice2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./practice2_files/styles.css">
+    </head><body><h1>Font Control</h1>
+
+
+
+    <p id="customParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+        <label for="rgbInput">Enter RGB value:</label>
+        <input type="text" id="rgbInput" placeholder="255,0,0">
+        <label for="borderWidthInput">Border Width (px):</label>
+        <input type="number" id="borderWidthInput" placeholder="2" value="2">
+        <button onclick="updateStyles()">Apply</button>
+
+    <script>
+        function updateStyles() {
+            // Get RGB values
+            const rgbInput = document.getElementById('rgbInput').value;
+            const paragraph = document.getElementById('customParagraph');
+            const borderWidthInput = document.getElementById('borderWidthInput').value;
+
+            // Set the color and border width
+            if (rgbInput) {
+                paragraph.style.color = `rgb(${rgbInput})`;
+                paragraph.style.borderColor = `rgb(${rgbInput})`;
+            }
+            if (borderWidthInput) {
+                paragraph.style.borderWidth = `${borderWidthInput}`;
+            }
+        }
+    </script>
+
+
+</body></html>

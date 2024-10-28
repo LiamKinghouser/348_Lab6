@@ -1,0 +1,30 @@
+
+<!-- saved from url=(0051)https://people.eecs.ku.edu/~l722k715/practice3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./practice3_files/styles.css">
+    </head><body><h1>JavaScript Password Verification</h1>
+
+
+
+        <label for="passwordOneInput">Enter password:</label>
+        <input type="text" id="passwordOneInput" placeholder="">
+        <label for="passwordTwoInput">Re-enter password:</label>
+        <input type="text" id="passwordTwoInput" placeholder="">
+        <button onclick="check()">Check</button>
+
+    <script>
+        function check() {
+            const pass1 = document.getElementById('passwordOneInput').value;
+            const pass2 = document.getElementById('passwordTwoInput').value;
+
+            if (pass1 !== pass2 || pass1.length < 8) {
+                alert("Invalid password.")
+            }
+            else {
+                alert("Valid password.")
+            }
+        }
+    </script>
+
+
+</body></html>

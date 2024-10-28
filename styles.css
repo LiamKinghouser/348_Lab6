@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#customParagraph {
+  border: 2px solid white;
+  padding: 1px;
+  margin: 20px;
+  color: white;
+}
